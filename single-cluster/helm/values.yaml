@@ -1,0 +1,5 @@
+replication: true
+replicas: 1
+serviceType: ClusterIP
+ingress:
+  path: ""

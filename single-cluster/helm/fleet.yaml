@@ -1,0 +1,16 @@
+# This file and all contents in it are OPTIONAL.
+
+# The namespace this chart will be installed and restricted to,
+# if not specified the chart will be installed to "default"
+namespace: platform
+
+# Custom helm options
+helm:
+  # The release name to use. If empty a generated release name will be used
+  releaseName: guestbook-test
+ 
+  # Custom values that will be passed as values.yaml to the installation
+  values:
+    replicas: 2
+    ingress:
+      path: /guestbook-test

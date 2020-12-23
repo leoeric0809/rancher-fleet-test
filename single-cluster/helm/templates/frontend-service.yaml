@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: guestbook-frontend
+  labels:
+    app: guestbook
+    tier: frontend
+  namespace: platform
+spec:
+  type: "{{ .Values.serviceType }}"
+  ports:
+  - port: 80
+  selector:
+    app: guestbook
+    tier: frontend
