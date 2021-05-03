@@ -1,4 +1,5 @@
 # Fleet Examples
+test direct push
 dummy
 hello world
 hi frank
